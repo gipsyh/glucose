@@ -1,3 +1,4 @@
 *.o
 glucose
+glucose-syrup
 .vscode
