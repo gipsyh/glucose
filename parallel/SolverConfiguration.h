@@ -47,21 +47,17 @@ DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
 OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  **************************************************************************************************/
 
-
 #ifndef SolverConfiguration_h
 #define SolverConfiguration_h
 
-
-
-namespace Glucose {
+namespace Glucose
+{
 
 class MultiSolvers;
 
 class SolverConfiguration {
-
-public : 
-    static void configure(MultiSolvers *ms, int nbsolvers);
-    
+    public:
+	static void configure(MultiSolvers *ms, int nbsolvers);
 };
 
 }
