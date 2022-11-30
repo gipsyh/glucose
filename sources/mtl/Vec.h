@@ -37,7 +37,6 @@ namespace Glucose {
 
 template<class T>
 class vec {
-    T*  data;
     int sz;
     int cap;
 
@@ -51,6 +50,7 @@ class vec {
     static inline void nextCap(int& cap){ cap += ((cap >> 1) + 2) & ~1; }
 
 public:
+    T*  data;
     // Constructors:
     vec()                       : data(NULL) , sz(0)   , cap(0)    { }
     explicit vec(int size)      : data(NULL) , sz(0)   , cap(0)    { growTo(size); }
